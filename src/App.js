@@ -1,9 +1,9 @@
-import React from "react";
-import List from "../components/List";
-import TodoHeader from "../components/TodoHeader";
-import TodoBody from "../components/TodoBody";
-import TodoFooter from "../components/TodoFooter";
-import "./styles.css";
+import React from 'react';
+import List from '../components/List';
+import TodoHeader from '../components/TodoHeader';
+import TodoBody from '../components/TodoBody';
+import TodoFooter from '../components/TodoFooter';
+import './styles.css';
 
 class TodoApp extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class TodoApp extends React.Component {
     this.handleTodoClick = this.handleTodoClick.bind(this);
     this.addTodo = this.addTodo.bind(this);
     this.state = {
-      todo: "",
+      todo: '',
       todos: []
     };
     return this;
@@ -25,7 +25,7 @@ class TodoApp extends React.Component {
    */
   handleInput(e) {
     this.setState({
-      todo: e.target.value || ""
+      todo: e.target.value || ''
     });
   }
 
@@ -70,7 +70,7 @@ class TodoApp extends React.Component {
     // update state and remove todo string to empty the input box
     this.setState({
       todos,
-      todo: ""
+      todo: ''
     });
   }
 
@@ -94,8 +94,7 @@ class TodoApp extends React.Component {
             className="todo-button"
             onClick={() => this.addTodo(this.state.todo)}
             type="button"
-            name="add"
-          >
+            name="add">
             Add
           </button>
           <List onClick={this.handleTodoClick} items={this.state.todos} />
