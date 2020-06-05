@@ -1,0 +1,30 @@
+.todo {
+  font-family: sans-serif;
+  font-size: 12px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.todo-heading {
+  line-height: 1;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.todo-list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
+
+.todo-footer {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.checked {
+  text-decoration-line: line-through;
+}
